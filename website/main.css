@@ -1,0 +1,104 @@
+/* the asterisk make everything in the file be affected by the specifications */
+/* Always start with box-siszing and order-box, for organization*/
+*{
+	box-sizing: border-box;
+}
+/* height tells you what percentage of the screen your website will cover*/
+/* overflow is how much of the website will show up and how much needs to be scrolled*/
+html, body{
+	height: 100%;
+	overflow: none;
+	padding: 0px;
+	margin: 0px;
+	font-family: "Roboto";
+	background-color: rgb(249, 248, 247);
+	/*you can google "color picker" to choose a set of RGB coordinates*/
+}
+/*this refers/gives properties to every div */
+div {
+	display: inline-block; /*will bring two things next to each other; they will only take the space they need*/
+	margin-right: -4px; /* always add "margin-right:-4px" when using in-line block, to remove extra space*/
+	vertical-align: middle;
+}
+/*Use #to create a class*/
+div#top-left {
+	width:50%;
+	min-height: 60%;
+	background-image: url('me_photo.jpg');
+	background-position: 6% 6%;
+	background-size: cover; /*makes sure image covers the background*/
+	background-repeat: no-repeat;
+}
+div#top-right {
+	width:50%;
+	min-height: 60%;
+	padding: 5% 8%;
+	color: rgb(83, 88, 95);
+}
+/*Padding: giving space on its inside, from 1 to 4 numbers (pixels or percentage)
+four numbers mean Top, left, bottom, right,
+two numbers are Top/Bottom + Left/Right,
+one number is everything; 
+margin: giving it space on the outside; numbers work just like in padding*/
+
+div#bottom {
+	width: 100%;
+	min-height: 40%;
+	color: rgb(220, 222, 224);
+	background-color: rgb(40,40,40);
+}
+
+div#bottom-left {
+	width: 50%;
+	padding: 5% 8%;
+	vertical-align: top;
+
+}
+
+div#bottom-right {
+	width: 30%;
+	margin-left: 20%;
+	vertical-align: top;
+	padding: 2% 8%;
+}
+
+h1 {
+	font-size: 45px;
+	font-weight: bold; /*You can also use "700", which stands for bold*/
+	margin-bottom: 20px;
+}
+
+h2 {
+	font-size: 35px;
+	margin-bottom: 15px;
+}
+
+p {
+	font-size: 22px;
+	font-weight: lighter;
+	line-height: 1.4; /*basically spacing in word: double-space = 2*/;
+	margin: 0;
+}
+
+a {
+	text-decoration: none; /*underlines, strikethroughs, etc.*/
+	font-weight: bold;
+	color: rgb(3, 203, 235);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
